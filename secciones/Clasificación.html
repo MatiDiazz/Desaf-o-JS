@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Process App</title>
+    <link rel="stylesheet" href="../Styles/Estilo.css">
+    <link rel="stylesheet" href="../Styles/style.css"> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<header>
+    <nav>
+      <ul class ="navbar">
+        <li><a href="../secciones/Iniciar sesión.html">Iniciar sesión</a></li>
+        <li><a href="../index.html">Kanban</a></li>
+        <li><a href="../secciones/Herramental.html">Herramental</a></li>
+        <li><a href="../secciones/Clasificación.html">Clasificación</a></li>
+      </ul>
+    </nav>
+</header>
+
+<body>
+
+  
+    <div id="lista" class="container">
+        <h1 id="encabezado" class="encabezado">Tipos de cables</h1>
+        <div class="four columns">
+            <div class="card">
+                <div class="card">
+                    <img src="../images/baja tensión.jpg" width="270px 100px" class="">
+                    <div class="info-card">
+                        <h4>Cables de baja Tensión</h4>
+                        <p>PE/PVC</p>
+                        <p class="text"><span class="u-pull-right ">1,5 a 10 mm2</span></p>
+                        <button onclick="CBT()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/CAD.jpg" width="270px 100px" class="">
+                    <div class="info-card">
+                        <h4>Cable de Aluminio Desnudo</h4>
+                        <p>Al</p>
+                        <p class=""><span class="u-pull-right ">16 a 630 mm2</span></p>
+                        <button onclick="CAD()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/CM AL.jpg" width="270px 100px" class="">
+                    <div class="info-card">
+                        <h4>Cable de Media Tensión Aluminio</h4>
+                        <p>Cat. I/II</p>
+                        <p class="precio"><span class="u-pull-right ">50 a 630 mm2</span></p>
+                        <button onclick="CMTA()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/CM CU.jpg" width="270px 100px" class="">
+                    <div class="info-card">
+                        <h4>Cable de Media Tensión Cobre</h4>
+                        <p>Cat. I/II</p>
+                        <p class="precio"><span class="u-pull-right ">50 a 630 mm2</span></p>
+                        <button onclick="CMTC()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/Preensamblados.webp" width="150px 150px" class="">
+                    <div class="info-card">
+                        <h4>Cable Preensamblados</h4>
+                        <p>N+AP+F</p>
+                        <p class="precio"><span class="u-pull-right ">16 a 120 mm2</span></p>
+                        <button onclick="CP()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+           
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/Protegidos.jpg" width="150px 150px" class="">
+                    <div class="info-card">
+                        <h4>Cable Protegido</h4>
+                        <p>Cu/Al</p>
+                        <p class="precio"><span class="u-pull-right ">16 a 630 mm2</span></p>
+                        <button onclick="CP1()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/subterraneo.jpg" width="270px 100px" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Cable Subterraneo</h4>
+                        <p>Cu/Al</p>
+                        <p class="precio"><span class="u-pull-right ">16 a 630 mm2</span></p>
+                        <button onclick="CS()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="../images/CCD.jpg" width="150px 150px" class="">
+                    <div class="info-card">
+                        <h4>Cable de Cobre Desnudo</h4>
+                        <p>Cu</p>
+                        <p class=""><span class="u-pull-right ">16 a 630 mm2</span></p>
+                        <button onclick="CCD()" class="u-full-width button-primary button input agregar-carrito">Caracteristicas</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>  
+
+    <script src="../js/sweetAlert.js"></script>
+
+</body>
+</html>

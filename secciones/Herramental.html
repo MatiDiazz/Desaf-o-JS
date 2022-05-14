@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Process App</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class ="navbar">
+            <li><a href="../secciones/Iniciar sesión.html">Iniciar sesión</a></li>
+            <li><a href="../index.html">Kanban</a></li>
+            <li><a href="../secciones/Herramental.html">Herramental</a></li>
+            <li><a href="../secciones/Clasificación.html">Clasificación</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <form class="form-kg" id="kilogramos">
+        <h4>Calculo Bobina</h4>
+        <input class="controles" type="number" name="" id="Diámetro" placeholder="Ingrese el diámetro">
+        <input class="controles" type="number" name="" id="Metros" placeholder="Ingrese los metros">
+        <input class="controles" type="number" name="" id="Densidad" placeholder="Ingrese la densidad Cu:8.96, Al:2.70">
+      
+        <button type="button" class="botons" onclick="PesoRes();">Calcular</button>
+        <button onclick="limpiar();">Limpiar Datos</button>
+        <!-- <input class="controles" id="peso" placeholder="Peso de bobina"> -->
+        <div class="controles" placeholder="RESULTADO">
+           <P placeholder="peso"><span id="peso"></span>kg</P>
+        </div>
+        <!-- <p>El resultado es: <span id="peso"></span></p> -->
+    </form>
+
+    <form class="form-contraccion" id="contracciones">
+        <h4>Cálculo contracción</h4>
+        <input class="controles" type="number" name="DiámetroH" id="DiámetroHot" placeholder="Ingrese el espesor promedio (HOT)">
+        <input class="controles" type="number" name="DiámetroC" id="DiámetroCold" placeholder="Ingrese el espesor promedio (COLD)">
+      
+        <button type="button" class="botons" onclick="ContracciónRes();">Calcular</button>
+        <button onclick="limpiar2();">Limpiar Datos</button>
+        <div class="controles" placeholder="RESULTADO">
+            <P placeholder="peso"><span id="contracción"></span>%</P>
+         </div>
+        <!-- <input class="controles" name="resultado" id="resultado" placeholder="Contracción"> -->
+    </form>
+
+    <form class="form-DDR" id="DDR">
+        <h4>Cálculo DDR</h4>
+        <input class="controles" type="number" name="diametro matriz" id="Matriz" placeholder="Ingrese el diámetro interno (Matriz)">
+        <input class="controles" type="number" name="metros" id="Niple" placeholder="Ingrese el diámetro externo (Niple)">
+        <input class="controles" type="number" name="densidad" id="Cable" placeholder="Ingrese el diámetro Final (Cable)">
+        <input class="controles" type="number" name="densidad" id="Cuerda" placeholder="Ingrese el diámetro (Cuerda)">
+       
+        <button type="button" class="botons" onclick="DDRRes();">Calcular</button>
+        <button onclick="limpiar3();">Limpiar Datos</button>
+        <div class="controles" placeholder="RESULTADO">
+            <P placeholder="peso"><span id="DDr"></span></P>
+         </div>
+    </form>
+
+    <script src="../js/herramentales.js"></script>
+  
+</body>
+
+</html>
